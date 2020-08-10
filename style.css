@@ -34,6 +34,18 @@ li a{
 
 }
 
+.сolumn {
+     float: left;
+}
+
+.column.side {
+	width: 25%
+
+}
+
+.column.middle {
+	width: 50%
+}     
 li a:hover:not(.active) {
 	background-color: #111;
 }
@@ -41,5 +53,5 @@ li a:hover:not(.active) {
 	background-color: #4CAF50
 }
 p li a{
-	font-family: Arial
+	font-family: Tahoma, Geneva, sans-serif;
 }
