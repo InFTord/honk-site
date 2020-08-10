@@ -1,5 +1,6 @@
 body{
-	color: black;
+	color: white;
+	background-image: url("154293.jpg");
 }
 a{
 	color: blue;
@@ -39,6 +40,6 @@ li a:hover:not(.active) {
 .active {
 	background-color: #4CAF50
 }
-p {
+p li a{
 	font-family: Arial
 }
