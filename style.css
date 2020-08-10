@@ -6,7 +6,8 @@ a{
 	color: blue;
 	text-align: center;
 	text-decoration: none;
-	position: fixed
+	font-family: Tahoma, Geneva, sans-serif;
+
 h1 {
 	color:black;
 	text-align: center;
@@ -31,9 +32,22 @@ li a{
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+
 
 }
 
+.lik a: {
+	color: blue;
+}
+
+.lik a:hover {
+	color: red;
+	text-decoration: underline;
+	text-align: center;
+}
+
+}
 .сolumn {
      float: left;
 }
@@ -52,6 +66,6 @@ li a:hover:not(.active) {
 .active {
 	background-color: #4CAF50
 }
-p li a{
+p{
 	font-family: Tahoma, Geneva, sans-serif;
 }
