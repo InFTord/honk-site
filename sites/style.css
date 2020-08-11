@@ -1,0 +1,60 @@
+body{
+	color: dark;
+	margin: 0
+}
+a{
+	color: blue;
+	text-align: center;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+
+h1 {
+	color:black;
+	text-align: center;
+}
+
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	overflow: hidden;
+
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+
+
+}
+
+.lik a: {
+	color: blue;
+}
+
+.lik a:hover {
+	color: red;
+	text-decoration: underline;
+	text-align: center;
+}
+
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50
+}
+p{
+	font-family: Tahoma, Geneva, sans-serif;
+}
