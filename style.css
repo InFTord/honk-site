@@ -35,12 +35,14 @@ li a{
 	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
 	transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+
 
 
 }
 
 .lik a: {
-	transition: color 0.5s;
+	transition: color 0.3s;
 }
 
 .lik a:hover {
