@@ -2,6 +2,7 @@
 <html>
 <head> 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Тестовый сайт (а еще хонк)</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="icon" href="icon.png">
@@ -32,6 +33,7 @@
 <p> UPDATE V0.6.2: Теперь все находится в одном HTML файле+анимации перехода по вкладкам</p>
 <p> UPDATE V0.6.2_01: Убран хлам из html файла </p>
 <p> UPDATE V0.6.2_02: Теперь текст не весит в воздухе (весит, но он типо прикреплен к странице) </p>
+<p> UPDATE V0.6.2_03: Добавлен footer внизу сайта </p>
 
 
   </div>
@@ -41,6 +43,9 @@
     <p>Ой, что это? Это <b>хонк</b>.</p>
     <p>Ниже будет изображение <b>хонка</b> :0)</p>
     <img src="honk.jpg" alt="Хонк :0)" width="150" height="147">
+  </div>
+  <div class = "footer">
+    <p>Здесь могло быть что нибудь ваше.... А так, тут только пока хонк.</p>
   </div>
   <script>
 function openCity(evt, cityName) {
@@ -52,6 +57,8 @@ function openCity(evt, cityName) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+
+
 
     // Нахождение всех элементов с классом tabcontent и удаление у них класса active
     tablinks = document.getElementsByClassName("tablinks");

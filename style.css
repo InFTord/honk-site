@@ -67,3 +67,22 @@ a:hover {
 	color: red;
 	text-decoration: underline;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f51414;
+	color: white;
+	text-align: center;
+	animation: fadeEffect 1s;
+}
+
+
+@media screen and (max-width: 400px) {
+	.tab button {
+		float: none;
+		width: 100%;
+	}
+}
