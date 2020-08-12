@@ -48,6 +48,7 @@ h1 {
 /* Стилизация контента в вкладке */
 .tabcontent {
     display: none;
+    margin: 0;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
