@@ -61,4 +61,9 @@ h1 {
 /* Шрифты для основного текста */
 p {
 	font-family: Tahoma, Geneva, sans-serif;
-} 
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
