@@ -1,13 +1,14 @@
 body{
 	margin: 0
 }
-a{
+/* Стилизация ссылок */
+a{ 
 	color: blue;
 	text-align: center;
 	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
 }
-
+/* Стилизация параграфов h1 */
 h1 {
 	color:black;
 	text-align: left;
@@ -16,40 +17,49 @@ h1 {
 }
 
 
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #333;
-	overflow: hidden;
-
+ /* Стилизация вкладок */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
-li{
-	float: left;
+
+/* Стилизация кнопок открывающих вкладки */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
-li a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+
+/* При наведении меняется цвет кнопки */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Активная кнопка на данный момент */
+.tab button.active {
+    background-color: #4CAF50;
+}
+
+/* Стилизация контента в вкладке */
+.tabcontent {
+    display: none;
+    margin: 0
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+/* Анимация для эффекта fadeEffect */
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1}
+}
+/* Шрифты для основного текста */
+p {
 	font-family: Tahoma, Geneva, sans-serif;
-	transition: background-color 0.3s;
-	-moz-transition: background-color 0.3s;
-
-
-
-}
-
-
-
-li a:hover:not(.active) {
-	background-color: #111;
-}
-li a.active {
-	background-color: #4CAF50
-}
-p{
-	font-family: Tahoma, Geneva, sans-serif;
-}
+} 
