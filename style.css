@@ -24,7 +24,7 @@ h1 {
  /* Стилизация вкладок */
 .tab {
 	display: flex;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
