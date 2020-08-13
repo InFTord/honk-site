@@ -1,5 +1,9 @@
 body{
-	margin: 0
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 /* Стилизация ссылок */
 a{ 
@@ -19,6 +23,7 @@ h1 {
 
  /* Стилизация вкладок */
 .tab {
+	display: flex;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -47,11 +52,14 @@ h1 {
 
 /* Стилизация контента в вкладке */
 .tabcontent {
+	flex-grow: 1;
+	flex-shrink: 0;
     display: none;
     margin: 0;
     border: 1px solid #ccc;
     border-top: none;
     animation: fadeEffect 1s;
+    box-sizing: border-box;
 }
 /* Анимация для эффекта fadeEffect */
 @keyframes fadeEffect {
@@ -64,25 +72,17 @@ p {
 }
 
 a:hover {
-	color: red;
+	color: #1609ad;
 	text-decoration: underline;
 }
 
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
+	padding: 15px 0;
+	box-sizing: border-box;
 	background-color: #f51414;
 	color: white;
 	text-align: center;
 	animation: fadeEffect 1s;
+	margin-top: auto;
 }
 
-
-@media screen and (max-width: 400px) {
-	.tab button {
-		float: none;
-		width: 100%;
-	}
-}
