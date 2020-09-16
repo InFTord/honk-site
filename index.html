@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Тестовый сайт (а еще хонк)</title>
@@ -10,15 +10,14 @@
 </head>
   <body>
 <div class = "tab">
-<button class="tablinks" onclick="openCity(event, 'index')" id="defaultOpen">Главная страница</button>
-  <button class="tablinks" onclick="openCity(event, 'changelog')">Чейнджлог</button>
-  <button class="tablinks" onclick="openCity(event, 'about') ">О сайте</button>
+<button class="tablinks" onclick="openCity(event, 'index')" id="defaultOpen" title="Главная страница сайта">Главная страница</button>
+  <button class="tablinks" onclick="openCity(event, 'changelog')" title="Чейнджлог сайта">Чейнджлог</button>
+  <button class="tablinks" onclick="openCity(event, 'about')" title="Описание сайта агада">О сайте</button>
    </div>
    <div id = "about" class="tabcontent">
   <h1>Автором сайта является InFTord</h1>
 <p>Данный сайт сделан ради изучения HTML</p>
-<p>Версия сайта на данный момент: 0.6.2_05</p>
-<p>У сайта появился ДС сервер! Вот он: <a href="https://discord.gg/Ex94eE">Ссылка на ДС сервер сайта</a></p>
+<p>Версия сайта на данный момент: 0.6.2_06</p>
   </div>
   <div id = "changelog" class = "tabcontent">
     <H1>Тут будет чейнджлог данного сайтика</H1>
@@ -36,6 +35,7 @@
 <p> UPDATE V0.6.2_03: Добавлен footer внизу сайта </p>
 <p> UPDATE V0.6.2_04: Фикс футера</p>
 <p> UPDATE V0.6.2_05: Добавление теней и фикс футера потому что Самогон</p>
+<p> UPDATE V0.6.2_06: При наводке на кнопке в navбаре отображаются подсказки</p>
 
 
   </div>
@@ -49,6 +49,6 @@
   <div class = "footer">
     <p>Здесь раньше что то было, но я не могу вспомнить.. Что то про Дату и Слитого.</p>
   </div>
-  <script src ="scripts/tab.js"></script>  
+  <script src ="scripts/tab.js"></script>
   </body>
 </html>
