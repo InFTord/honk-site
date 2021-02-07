@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 /* Стилизация ссылок */
 a{ 
@@ -15,8 +16,8 @@ a{
 /* Стилизация параграфов h1 */
 h1 {
 	color:black;
-	text-align: left;
-	font-family: Geneva, sans-serif;
+	text-align: center;
+	font-family: Tahoma , Geneva, sans-serif;
 
 }
 
@@ -27,8 +28,9 @@ h1 {
     overflow: visible;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    -webkit-box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	-webkit-animation: fadeEffect 1s;
+	-moz-animation: fadeEffect 1s;
+
 
 }
 
@@ -41,6 +43,7 @@ h1 {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+
 }
 
 /* При наведении меняется цвет кнопки */
@@ -50,7 +53,11 @@ h1 {
 
 /* Активная кнопка на данный момент */
 .tab button.active {
-    background-color: #4CAF50;
+    background-color: #8200ec;
+}
+
+.tab button.scrollbar {
+	 	scrollbar-color:  rgb(128, 0, 255);
 }
 
 /* Стилизация контента в вкладке */
@@ -73,14 +80,18 @@ h1 {
 	from {opacity: 0;}
 	to {opacity: 1}
 }
-/* Шрифты для основного текста */
-p {
-	font-family: Tahoma, Geneva, sans-serif;
+
+.scrollbar {
+	scrollbar-color:  rgb(128, 0, 255);
 }
 
 a:hover {
 	color: #1609ad;
 	text-decoration: underline;
+}
+
+a:checked {
+	color: green;
 }
 
 .footer {

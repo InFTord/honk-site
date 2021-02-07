@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openPage(evt, cityName) {
     // Обьявление всех элементов
     var i, tabcontent, tablinks;
 
