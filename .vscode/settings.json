@@ -1,0 +1,16 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    }
+}

@@ -1,4 +1,4 @@
-body{
+body {
 	position: relative;
 	height: 100vh;
 	margin: 0;
@@ -6,28 +6,31 @@ body{
 	flex-direction: column;
 	font-family: Tahoma, Geneva, sans-serif;
 }
+
 /* Стилизация ссылок */
-a{ 
+a {
 	color: blue;
 	text-align: center;
 	text-decoration: none;
 	font-family: sans-serif;
 }
+
 /* Стилизация параграфов h1 */
 h1 {
-	color:black;
+	color: black;
 	text-align: center;
-	font-family: Tahoma , Geneva, sans-serif;
+	font-family: Tahoma, Geneva, sans-serif;
 
 }
 
 
- /* Стилизация вкладок */
+/* Стилизация вкладок */
 .tab {
 	display: flex;
-    overflow: visible;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+	overflow: visible;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	animation: fadeEffect 1s;
 	-webkit-animation: fadeEffect 1s;
 	-moz-animation: fadeEffect 1s;
 
@@ -36,28 +39,28 @@ h1 {
 
 /* Стилизация кнопок открывающих вкладки */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
 
 }
 
 /* При наведении меняется цвет кнопки */
 .tab button:hover {
-    background-color: #ddd;
+	background-color: #ddd;
 }
 
 /* Активная кнопка на данный момент */
 .tab button.active {
-    background-color: #8200ec;
+	background-color: #8200ec;
 }
 
 .tab button.scrollbar {
-	 	scrollbar-color:  rgb(128, 0, 255);
+	scrollbar-color: rgb(128, 0, 255);
 }
 
 /* Стилизация контента в вкладке */
@@ -66,23 +69,29 @@ h1 {
 	-webkit-flex-grow: 1;
 	flex-shrink: 0;
 	-webkit-flex-shrink: 0;
-    display: none;
-    margin: 0;
-    border: 1px solid #ccc;
-    border-top: none;
-    animation: fadeEffect 1s;
-    -webkit-animation: fadeEffect 1s;
+	display: none;
+	margin: 0;
+	border: 1px solid #ccc;
+	border-top: none;
+	animation: fadeEffect 1s;
+	-webkit-animation: fadeEffect 1s;
 	-moz-animation: fadeEffect 1s;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 /* Анимация для эффекта fadeEffect */
 @keyframes fadeEffect {
-	from {opacity: 0;}
-	to {opacity: 1}
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1
+	}
 }
 
 .scrollbar {
-	scrollbar-color:  rgb(128, 0, 255);
+	scrollbar-color: rgb(128, 0, 255);
 }
 
 a:hover {
@@ -94,7 +103,7 @@ a:checked {
 	color: green;
 }
 
-.footer {
+footer {
 	padding: 15px 0;
 	box-sizing: border-box;
 	background-color: #f51414;
@@ -106,4 +115,3 @@ a:checked {
 	margin-top: auto;
 	overflow: visible;
 }
-
