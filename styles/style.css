@@ -12,6 +12,7 @@ h1 {
 	font-size: clamp(1rem, 3vw + 1rem, 4rem);
 	position: relative;
 	font-family: 'Source Sans Pro', monospace;
+	width: max-content;
 }
 
 h1::before,
@@ -25,8 +26,14 @@ h1::after {
 }
 
 h1::before {
-	background: teal;
-	animation: typeAnimation 3.5s steps(31) forwards;
+	background: white;
+	animation: typeAnimation 4s steps(31) forwards;
+}
+
+h1::after {
+	width: 0.105em;
+	background: black;
+	animation: typeAnimation 4s steps(31) forwards;
 }
 
 @keyframes typeAnimation {
