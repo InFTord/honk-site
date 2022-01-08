@@ -1,3 +1,8 @@
+:root {
+	--bg-color: hsl(49 37% 94%);
+	--typeAnimationspeed: 2s;
+}
+
 body {
 	margin: 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -25,20 +30,49 @@ h1::after {
 	left: 0;
 }
 
+a {
+	font-family: 'Source Sans Pro', monospace;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+a:hover {
+	animation: hoverButton 0.5s forwards;
+}
+
 h1::before {
-	background: white;
-	animation: typeAnimation 4s steps(31) forwards;
+	background: var(--bg-color);
+	animation: typeAnimation var(--typeAnimationspeed) steps(31) forwards;
 }
 
 h1::after {
 	width: 0.105em;
 	background: black;
-	animation: typeAnimation 4s steps(31) forwards;
+	animation:
+		typeAnimation var(--typeAnimationspeed) steps(31) forwards,
+		blink 500ms steps(31) infinite;
+}
+
+p::before {
+	animation: typeAnimation var(--typeAnimationspeed) 2s steps(13) forwards;
+
 }
 
 @keyframes typeAnimation {
 	to {
 		left: 100%;
+	}
+}
+
+@keyframes blink {
+	to {
+		background: transparent;
+	}
+}
+
+@keyframes hoverButton {
+	to {
+		color: crimson;
 	}
 }
 
