@@ -26,7 +26,7 @@ h1::after {
 
 h1::before {
 	background: teal;
-	animation: typeAnimation 1s ease-in-out forwards;
+	animation: typeAnimation 3.5s steps(31) forwards;
 }
 
 @keyframes typeAnimation {
