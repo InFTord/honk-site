@@ -1,117 +1,42 @@
 body {
-	position: relative;
-	height: 100vh;
 	margin: 0;
-	display: flex;
-	flex-direction: column;
-	font-family: Tahoma, Geneva, sans-serif;
-}
-
-/* Стилизация ссылок */
-a {
-	color: blue;
+	font-family: 'Source Sans Pro', sans-serif;
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
 	text-align: center;
-	text-decoration: none;
-	font-family: sans-serif;
+	background: var(--bg-color);
 }
 
-/* Стилизация параграфов h1 */
 h1 {
-	color: black;
-	text-align: center;
-	font-family: Tahoma, Geneva, sans-serif;
-
+	font-size: clamp(1rem, 3vw + 1rem, 4rem);
+	position: relative;
+	font-family: 'Source Sans Pro', monospace;
 }
 
-
-/* Стилизация вкладок */
-.tab {
-	display: flex;
-	overflow: visible;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
-	animation: fadeEffect 1s;
-	-webkit-animation: fadeEffect 1s;
-	-moz-animation: fadeEffect 1s;
-
-
+h1::before,
+h1::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
-/* Стилизация кнопок открывающих вкладки */
-.tab button {
-	background-color: inherit;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-
+h1::before {
+	background: teal;
+	animation: typeAnimation 1s ease-in-out forwards;
 }
 
-/* При наведении меняется цвет кнопки */
-.tab button:hover {
-	background-color: #ddd;
-}
-
-/* Активная кнопка на данный момент */
-.tab button.active {
-	background-color: #8200ec;
-}
-
-.tab button.scrollbar {
-	scrollbar-color: rgb(128, 0, 255);
-}
-
-/* Стилизация контента в вкладке */
-.tabcontent {
-	flex-grow: 1;
-	-webkit-flex-grow: 1;
-	flex-shrink: 0;
-	-webkit-flex-shrink: 0;
-	display: none;
-	margin: 0;
-	border: 1px solid #ccc;
-	border-top: none;
-	animation: fadeEffect 1s;
-	-webkit-animation: fadeEffect 1s;
-	-moz-animation: fadeEffect 1s;
-	box-sizing: border-box;
-}
-
-/* Анимация для эффекта fadeEffect */
-@keyframes fadeEffect {
-	from {
-		opacity: 0;
-	}
-
+@keyframes typeAnimation {
 	to {
-		opacity: 1
+		left: 100%;
 	}
 }
 
-.scrollbar {
-	scrollbar-color: rgb(128, 0, 255);
-}
-
-a:hover {
-	color: #1609ad;
-	text-decoration: underline;
-}
-
-a:checked {
-	color: green;
-}
-
-.footer {
-	padding: 15px 0;
-	box-sizing: border-box;
-	background-color: #f51414;
-	color: white;
-	text-align: center;
-	animation: fadeEffect 1s;
-	-webkit-animation: fadeEffect 1s;
-	-moz-animation: fadeEffect 1s;
-	margin-top: auto;
-	overflow: visible;
+.subtitle {
+	color: hsl(0, 0%, 0% / 0.7);
+	font-size: 2rem;
+	font-weight: 400;
 }
