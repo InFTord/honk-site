@@ -51,10 +51,14 @@ h1::after {
 	animation:
 		typeAnimation var(--typeAnimationspeed) steps(31) forwards,
 		blink 500ms steps(31) infinite;
+	-moz-animation:
+		typeAnimation var(--typeAnimationspeed) steps(31) forwards,
+		blink 500ms steps(31) infinite;
 }
 
 p::before {
 	animation: typeAnimation var(--typeAnimationspeed) 2s steps(13) forwards;
+	-moz-animation: typeAnimation var(--typeAnimationspeed) 2s steps(13) forwards;
 
 }
 
