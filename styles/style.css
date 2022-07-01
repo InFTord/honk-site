@@ -57,12 +57,6 @@ h1::after {
 		blink 500ms steps(31) infinite;
 }
 
-p::before {
-	animation: typeAnimation var(--typeAnimationspeed) 2s steps(13) forwards;
-	-moz-animation: typeAnimation var(--typeAnimationspeed) 2s steps(13) forwards;
-
-}
-
 @keyframes typeAnimation {
 	to {
 		left: 100%;
