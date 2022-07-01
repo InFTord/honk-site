@@ -43,6 +43,7 @@ a:hover {
 h1::before {
 	background: var(--bg-color);
 	animation: typeAnimation var(--typeAnimationspeed) steps(31) forwards;
+	-moz-animation: typeAnimation var(--typeAnimationspeed) 2s steps(31) forwards;
 }
 
 h1::after {
